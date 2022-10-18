@@ -65,7 +65,7 @@ export default {
         identifiedFriend.isFavorite = !identifiedFriend.isFavorite;
       }
     },
-  },
+  }, 
 };
 </script>
 

@@ -52,18 +52,21 @@ export default {
   // NEU(2) definieren der Events wird empfohlen, ist aber nicht zwingend
   // es dient der Dokumentation der Komponente und vorallem für "andere" Programmierer
   // es gibt die array Methode um events aufzulisten ['toggle-favorite', ....],
-  emits: {
-    // "toggle-favorite": function (id) {},
-    // oder noch detailierter:
+  emits: ['toggle-favorite'],
 
-    "toggle-favorite": function (id) {
-      if (id) return true;
-      else {
-        console.warn("id is missing");
-        return false;
-      }
-    },
-  },
+  // Kommentieren mit STRG+K+C bzw. STRG+K+U 
+  // emits: {
+  //   // "toggle-favorite": function (id) {},
+  //   // oder noch detailierter:
+
+  //   "toggle-favorite": function (id) {
+  //     if (id) return true;
+  //     else {
+  //       console.warn("id is missing");
+  //       return false;
+  //     }
+  //   },
+  // },
 
   data() {
     return {
